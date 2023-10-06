@@ -1,4 +1,5 @@
 nameAge = {}
+
 while True:
     options = int(input("Type an option:\n"
                         "0 for close the program\n"
