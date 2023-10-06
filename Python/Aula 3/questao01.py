@@ -45,7 +45,7 @@ while True:
                 searchSurname = input("Search for the surname of the specified person: ").capitalize()
                 fullNameSearch = searchName + " " + searchSurname
                 found = False
-# O segredo desse bloco funcionar de maneira logicamente correta é o found = false. Sem ele, as condições vão se repetir o tempo todo.
+# O segredo desse bloco funcionar de maneira logicamente correta é o found = false (flag). Sem ele, as condições vão se repetir o tempo todo.
                 for name, age in nameAge.items():
                     if fullNameSearch == name:
                         print(f"{fullNameSearch} found in the database.")
