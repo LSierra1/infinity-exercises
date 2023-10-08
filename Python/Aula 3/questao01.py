@@ -55,17 +55,3 @@ while True:
 
                 if not found:
                     print(f"{fullNameSearch} not found in the database.")
-
-                        
-                        # while True:
-                        #     if confirmSearch[0].upper() == "Y":
-                        #         continue
-                        #     elif confirmSearch[0].upper() == "N":
-                        #         break
-                        #     elif confirmSearch[0].upper() not in "YN":
-                        #         print("Sorry, I didn't understand what you said.")
-                        #         confirmSearch = input("Do you still want to search?\n"
-                        #                             "Type 'yes' to continue, 'no' to abort:\n")
-                        #     else:
-                        #         print("Error.")
-                        #         print(nameAge)
