@@ -1,0 +1,1 @@
+"Divisível" if {condição} else ""
