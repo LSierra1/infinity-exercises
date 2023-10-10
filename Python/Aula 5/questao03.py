@@ -1,2 +1,4 @@
 x = int(input("Enter a number: "))
-lambda x: "Divisível" if  else ""
+checker = lambda x: "Divisível" if (x % 3 == 0) and (x % 5 == 0) else "Não divisível"
+
+print(checker(x))
