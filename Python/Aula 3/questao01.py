@@ -11,7 +11,8 @@ while True:
 
     match options:
         case 0:
-            print(nameAge)
+            if not nameAge:
+                print("Nenhum nome foi adicionado.")
             exit()
         case 1:
             name = input("Enter the name of the person: ")
@@ -55,3 +56,9 @@ while True:
 
                 if not found:
                     print(f"{fullNameSearch} not found in the database.")
+
+        case 3:
+            if not nameAge:
+                print("Nenhum nome foi adicionado ainda.\n")
+            elif len(nameAge) > 1:
+                print(nameAge)
