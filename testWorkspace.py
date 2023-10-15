@@ -56,8 +56,35 @@
 
 # print(quadrados)
 
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-pairs = list(filter(lambda x: x % 2 == 0, numbers))
+# pairs = list(filter(lambda x: x % 2 == 0, numbers))
 
-print(pairs)
+# print(pairs)
+
+def listar_nomes(pessoas):
+    nomes = list()
+
+    for i in pessoas:
+        nomes.append(i['nome'])
+
+    print(nomes)
+
+pessoas = [
+    {
+        "nome": "Getulio",
+        "idade": 22
+    },
+    {
+        "nome": "Vagner",
+        "idade": 17
+    },
+    {
+        "nome": "Maria",
+        "idade": 21
+    }
+]
+
+# nomes = list(map(lambda x: x["nome"], pessoas))
+
+listar_nomes(pessoas)
