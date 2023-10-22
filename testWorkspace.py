@@ -62,29 +62,84 @@
 
 # print(pairs)
 
-def listar_nomes(pessoas):
-    nomes = list()
+# def listar_nomes(pessoas):
+#     nomes = list()
 
-    for i in pessoas:
-        nomes.append(i['nome'])
+#     for i in pessoas:
+#         nomes.append(i['nome'])
 
-    print(nomes)
+#     print(nomes)
 
-pessoas = [
-    {
-        "nome": "Getulio",
-        "idade": 22
-    },
-    {
-        "nome": "Vagner",
-        "idade": 17
-    },
-    {
-        "nome": "Maria",
-        "idade": 21
-    }
-]
+# pessoas = [
+#     {
+#         "nome": "Getulio",
+#         "idade": 22
+#     },
+#     {
+#         "nome": "Vagner",
+#         "idade": 17
+#     },
+#     {
+#         "nome": "Maria",
+#         "idade": 21
+#     }
+# ]
 
-# nomes = list(map(lambda x: x["nome"], pessoas))
+# # nomes = list(map(lambda x: x["nome"], pessoas))
 
-listar_nomes(pessoas)
+# listar_nomes(pessoas)
+
+# import random
+
+# jogadas = ["pedra", "papel", "tesoura"]
+
+# # Def com return = função
+# def jogador():
+#     escolha = int(input(
+#                         "Escolha uma das opções:\n"
+#                         "1 - Pedra\n"
+#                         "2 - Papel\n"
+#                         "3 - Tesoura\n"
+#     ))  -1
+#     return jogadas[escolha]
+
+# def computador():
+#     escolha = random.choice(jogadas)
+
+#     return escolha
+
+# # Def sem return = procedimento
+# def jogo(jogador, computador):
+#     if jogador == computador:
+#         print("Empate")
+#     elif (
+#         (jogador == "Pedra" and computador == "Tesoura") or
+#         (jogador == "Tesoura" and computador == "Papel") or
+#         (jogador == "Papel" and computador == "Pedra")
+# ):
+#         print("O jogador venceu.\n"
+#               f"j: {jogador} x c: {computador}")
+#     else:
+#         print("O jogador perdeu.\n"
+#               f"j: {jogador} x c: {computador}")
+            
+# j = jogador()
+# c = computador()
+# jogo(j, c)
+
+import aspose.pdf as ap
+
+# Inicializar objeto de documento
+document = ap.Document()
+
+# Adicionar Página
+page = document.pages.add()
+
+# Inicializar objeto textfragment
+text_fragment = ap.text.TextFragment("Hello,world!")
+
+# Adicionar fragmento de texto à nova página
+page.paragraphs.add(text_fragment)
+
+# Salvar PDF atualizado
+document.save("output.pdf")
